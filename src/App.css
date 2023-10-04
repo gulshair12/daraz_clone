@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#root {
+  overflow-x: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.transition-normal {
+  @apply transition-all duration-300 ease-out;
+}
+
+.transition-normal {
+  @apply transition-all duration-300 ease-out;
+}
+
+.radio-button {
+  @apply overflow-hidden appearance-none w-[14px] h-[14px] rounded-full border !border-black grid place-content-center before:w-[14px] before:rounded-full before:h-[14px] !bg-black before:!bg-white before:checked:w-[6px] before:checked:h-[6px] before:transition-all before:duration-300 focus:outline-none focus:!border-none focus:!ring-0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+.App-header {
+  background-color: #282C34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.App-link {
+  color: #61DAFB;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#bg_Image{
+  background-image: url("https://gcp-img.slatic.net/lazada/803ec5ae-6af2-409e-9c49-b658e0fe76f1_PK-1188-474.jpg");
+  background-size: cover;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+
+/* SlideToContinueButton.css */
+
+.slide-to-continue-button {
+  width: 300px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.slide-to-continue-button button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.slide-to-continue-button.slid {
+  width: 0;
+  overflow: hidden;
+}
+
+.slide-to-continue-button.slid button {
+  padding: 0;
+  width: 100px;
+}
+
+.custom-list-disc li::before {
+  content: "•"; /* You can use any character you like for the bullet */
+  color: orange; /* Change this to your desired color */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 1.5em; 
+}
+
+#helpcenter{
+  background-image: url('./assets/images/HelpSearch.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
